@@ -1,0 +1,259 @@
+
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:rgb(255, 240, 243);
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    color: white;
+    top: 45%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.card{
+    background: linear-gradient(180deg, rgb(255, 237, 243), rgb(185, 125, 145));
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 2px rgb(167, 100, 110) solid;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.subtitle{
+    background-color: rgb(179, 117, 137);
+}
+
+h1{
+    color: white;
+    letter-spacing: 60;
+    width: 550px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;  /* 2 columns */
+    gap: 40px;                      /* space between boxes */
+    width: 90%;
+    margin: 0 auto; 
+}
+
+.perkalian-container{
+    width: 600px;
+    grid-column: 1; grid-row: 1;
+}
+
+.pembagian-container{
+    width: 600px;
+    grid-column: 2; grid-row: 1;
+}
+
+.pemangkatan-container{
+    width: 600px;
+    grid-column: 1; grid-row: 2;
+}
+
+.basis-container{ 
+    width: 600px;
+    grid-column: 2; grid-row: 2;
+}
+
+.cardincard{
+    background-color: white;
+    width: 500px;
+    padding: 10px;
+    margin: 0px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.cardincard:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.rumus{
+    width: 500px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.rumus:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contoh{
+    width: 500px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.contoh:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+img{
+    width: 450px;
+    margin: 0;
+    padding: 0;
+    display:block;
+    line-height: 0;
+}
+
+#cthkali{
+    margin-bottom: 10px ;
+}
+
+h2{
+    font-size: 25px;
+    border: 3px rgb(182, 119, 119) dashed;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.gede{
+    width: 350px;
+}
+
+.navbar {
+    background-color: #6B7A8F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 20px;
+    border-radius: 0 0 12px 12px; /* rounded bawah */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+/* LINK UTAMA */
+.navbar a {
+    font-size: 17px;
+    color: #F7F7F7;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: 0.3s ease;
+    border-radius: 8px;
+}
+
+.navbar a:hover {
+    background-color: #C38D9E;
+    transform: scale(1.07);
+}
+
+/* DROPDOWN ------------------------------------------------------ */
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: #F7F7F7;
+    padding: 14px 20px;
+    background-color: inherit;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-family: "Georgia", serif;
+    border-radius: 8px;
+}
+
+/* animasi hover */
+.dropdown:hover .dropbtn {
+    background-color: #C38D9E;
+    transform: scale(1.05);
+}
+
+/* PANAH ROTATE */
+.arrow {
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.dropdown:hover .arrow {
+    transform: rotate(180deg);
+}
+
+/* DROPDOWN CONTENT -------------------------------------------------- */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 210px;
+    background-color: #E7DFDD;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+    padding: 8px 0;
+
+    /* fade in */
+    opacity: 0;
+    transform: translateY(10px);
+    transition: 0.25s ease;
+}
+
+/* link di dropdown */
+.dropdown-content a {
+    color: #4C5C68;
+    padding: 12px 18px;
+    display: block;
+    text-decoration: none;
+    transition: 0.3s ease;
+    border-radius: 6px;
+}
+
+/* hover di dropdown */
+.dropdown-content a:hover {
+    background-color: #D4A5A5;
+    padding-left: 25px; /* animasi geser */
+}
+
+/* saat di-hover muncul */
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+navbar {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 15px;
+    }
+    .dropdown-content{
+        min-width: 180px;
+    }
+
+    /* TITLE ----------------------------------------------------------- */
+#log {
+    margin-top: 35px;
+    font-size: 42px;
+    color: #4C5C68;
+}
+
+#kelompok {
+    font-size: 18px;
+    margin-top: -10px;
+    color: #6B7A8F;
+}
+
+body {
+    font-family: "Georgia", serif;
+    text-align: center;
+    margin: 0;
+    background-color: #F2E9E3;
+}
